@@ -12,8 +12,9 @@ const makeStore = () => {
 
   };
 
-const addToCart = () => {
-  cart.cartToDom();
+const addToCartEvent = () => {
+  const book = bookData.getBook();
+  cart.addToCart(book);
 };
  
 export default { makeStore };
